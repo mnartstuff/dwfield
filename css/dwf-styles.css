@@ -118,7 +118,13 @@ header .row{
     margin-top: 50px;
     margin-bottom:50px;
 }
+#sponsors h2{
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 40px;;
+}
 .sponsor-tile { 
+    position: relative;
     border: #072a75 2px solid;
     overflow: hidden;
     width: 200px;
@@ -128,7 +134,17 @@ header .row{
   .sponsor-tile h5{
       margin-left: 10px;
   }
-
+  .sponsor-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
 
 
 /***   FOOTER   ***/
@@ -224,6 +240,9 @@ footer{
         border-radius: 10px;
         max-width: 450px;
         margin: auto;
+    }
+    #header-title h4{
+        line-height: 1.4em;
     }
     .nav li{
         background-color: #ddd;
