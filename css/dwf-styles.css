@@ -1,0 +1,239 @@
+body{
+    /* font-family: 'Antic Slab', serif; */
+    font-family: "Droid Serif",Georgia,serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    /* border-bottom: 1px #888888 solid; */
+}
+
+header .row{
+    margin-bottom: 50px;
+}
+
+#collapsable-nav{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-default{
+    background-color: #ffffff;
+}
+.navbar-toggle{
+    float: none;
+    margin-right: 0;
+}
+
+#nav-list a{
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/***   HOMEPAGE   ***/
+
+.jumbotron{
+    padding: 0;
+}
+.container .jumbotron{
+    border-radius: 0;
+    padding: 0;
+}
+
+#main-text h2{
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+#main-text p {
+    text-align: justify;
+}
+#reg-button{
+    text-align: center;
+}
+.btn {
+    border-radius: 5px;
+    color: #292323;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    transition: 0.15s;
+  }
+  .btn-alt {
+    border: 1px solid #292323;
+    padding: 10px 30px;
+  }
+  .btn-alt:hover {
+      color: #ffffff;
+      background-color: #292323ad;
+  }
+
+#side-info{
+    text-align: center;
+    margin: auto;
+}
+
+#bikes{
+    width: 100%;
+    margin-top: 23px;
+}
+#bikes img{
+    width: 100%;
+}
+
+#more-info h3{
+   text-align: center;
+}
+#more-info ul{
+    text-align: left;
+}
+
+#match-p{
+    text-align: justify;
+}
+
+#team-pics{
+    display: flex;
+    justify-content: space-between;
+}
+#team-pics figure{
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#team-pics img{
+    width: 100%;
+}
+
+#sponsors{
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+.sponsor-tile { 
+    border: #072a75 2px solid;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+  }
+  .sponsor-tile h5{
+      margin-left: 10px;
+  }
+
+
+
+/***   FOOTER   ***/
+
+footer{
+    background-color: #f0f0f0;
+    margin-top:35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#fb{
+    display: block;
+    padding-bottom:15px;
+}
+
+
+/***   MEDIA QUERIES   ***/
+
+@media all and (min-width: 1200px){
+    .container .jumbotron {
+        background: url(../images/kayaks-1200.jpg) no-repeat;
+        height: 435px;
+    }
+    #side-info{
+        padding-left: 55px;
+    }
+    #main-text p{
+        font-size: 1.2em;
+    }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+    .container .jumbotron {
+        background: url(../images/kayaks-992.jpg) no-repeat;
+        height: 360px;
+    }
+    #side-info{
+        padding-left: 30px;
+    }
+    #main-text p{
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .container .jumbotron {
+        background: url(../images/kayaks-768.jpg) no-repeat;
+        height: 279px;
+    }
+
+    #bikes, #team-pics{
+        max-width: 420px;
+        text-align: center;
+        margin:auto;
+    }
+    #main-text p{
+        font-size: 1.1em;
+    }
+    #fb, #copy{
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 768px){
+    header{
+        /* text-align: center; */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #header-title{
+        text-align: right;
+    }
+    h4{
+        line-height: 1.45em;
+        margin-top: 2px;
+    }
+}
+
+@media all and (max-width: 767px){
+    #bikes, #team-pics{
+        max-width: 420px;
+        text-align: center;
+        margin:auto;
+    }
+    .row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header-title{
+        border: 1px #2c2c2c solid;
+        border-radius: 10px;
+        max-width: 450px;
+        margin: auto;
+    }
+    .nav li{
+        background-color: #ddd;
+    }
+    .nav li:hover{
+        background-color: #ffffff;
+    }
+
+    #fb, #copy{
+        text-align: center;
+        margin: auto;
+    }
+}
